@@ -1,6 +1,4 @@
-function domId(id) {
-  return document.getElementById(id);
-}
+const domId = (id) => document.getElementById(id);
 const ColorList = [
   "pallet",
   "viridian",
@@ -25,7 +23,7 @@ domId("colorContainer").innerHTML = content;
 const button = document.getElementsByClassName("color-button");
 
 for (let i in ColorList) {
-  button[i].onclick = function () {
+  button[i].onclick = () => {
     let addClass = button[i].classList[1];
     // console.log(addClass);
     domId("house").classList.add(`${addClass}`);
