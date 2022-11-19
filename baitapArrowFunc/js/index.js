@@ -47,3 +47,5 @@ for (let i in ColorList) {
     // return false;
   };
 }
+
+document.querySelector(".pallet").classList.add("active");
