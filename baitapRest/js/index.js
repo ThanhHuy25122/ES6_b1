@@ -13,7 +13,7 @@ domId("btnKhoi1").onclick = function () {
   domId("tbKhoi1").innerHTML = calcAverage(...array);
 };
 
-domId("btnKhoi2").onclick = function () {
+domId("btnKhoi2").onclick = () => {
   const letter = +domId("inpVan").value;
   const history = +domId("inpSu").value;
   const geography = +domId("inpDia").value;
@@ -24,11 +24,11 @@ domId("btnKhoi2").onclick = function () {
   domId("tbKhoi2").innerHTML = calcAverage(...array);
 };
 
-function calcAverage(...array) {
+calcAverage = (...array) => {
   let sum = 0;
   for (let i in array) {
     sum += array[i];
   }
   let avg = sum / array.length;
   return avg;
-}
+};

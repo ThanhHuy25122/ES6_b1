@@ -1,4 +1,5 @@
 const domId = (id) => document.getElementById(id);
+
 const ColorList = [
   "pallet",
   "viridian",
